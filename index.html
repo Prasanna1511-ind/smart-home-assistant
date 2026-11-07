@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Smart Home Assistant home">
+        <span class="logo-mark">SH</span>
+        <span>Smart Home Assistant</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="dashboard-link" href="dashboard.html">Dashboard</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="security.html">Security</a>
+        <a href="energy.html">Energy</a>
+        <a href="automation.html">Automation</a>
+        <a href="assistant.html">AI Assistant</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Your Home. Your Voice. Your Smart Life.</p>
+        <h1>Control Your Smart Home With Intelligence</h1>
+        <p class="lead">Manage your lights, climate, security and appliances from one intelligent dashboard.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="dashboard.html">Open Dashboard</a>
+          <a class="btn btn-secondary" href="#features">Explore Features</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="page-section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Central control</p>
+            <h2>A realistic smart-home demonstration</h2>
+          </div>
+          <p class="muted">All controls are simulated in the browser using HTML, CSS, JavaScript, and localStorage.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Device Control</h3>
+            <p>Toggle lights, fans, AC, TV, smart lock, and speaker from reusable device cards.</p>
+          </article>
+          <article class="card">
+            <h3>Live Monitoring</h3>
+            <p>View simulated temperature, humidity, security status, and energy consumption.</p>
+          </article>
+          <article class="card">
+            <h3>AI Assistant</h3>
+            <p>Use rule-based natural-language commands to update the same shared device state.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Connected devices</p>
+            <h2>Device preview</h2>
+          </div>
+          <a class="btn" href="dashboard.html">Manage devices</a>
+        </div>
+        <div id="homeDevicePreview" class="device-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="section-inner two-column">
+        <article class="panel">
+          <p class="eyebrow">Home AI Assistant</p>
+          <h2>Conversational smart-home commands</h2>
+          <p class="muted">The assistant matches keywords such as room, device, action, and scene name. It updates the same simulated state used by the dashboard.</p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="assistant.html">Open AI Assistant</a>
+          </div>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Security and energy</p>
+          <h2>Monitor what matters</h2>
+          <p class="muted">Security cards show door, sensor, lock, and camera states. Energy charts estimate usage based on active simulated devices.</p>
+          <div class="button-row">
+            <a class="btn" href="security.html">Security</a>
+            <a class="btn" href="energy.html">Energy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="section-inner">
+        <div class="panel">
+          <p class="eyebrow">Quick start</p>
+          <h2>Ready to control the simulated smart home?</h2>
+          <p class="muted">Open the dashboard, activate a scene, then ask the assistant to control a light or check security.</p>
+          <div class="quick-actions">
+            <button class="btn btn-primary" type="button" data-scene="morning">Morning Mode</button>
+            <button class="btn" type="button" data-scene="movie">Movie Mode</button>
+            <button class="btn" type="button" data-scene="sleep">Sleep Mode</button>
+            <button class="btn" type="button" data-scene="away">Away Mode</button>
+            <button class="btn" type="button" data-scene="security">Security Mode</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Smart Home Assistant. Static college project demo.</p>
+      <p>HTML5, CSS3, Vanilla JavaScript, localStorage</p>
+    </div>
+  </footer>
+
+  <script src="js/devices.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

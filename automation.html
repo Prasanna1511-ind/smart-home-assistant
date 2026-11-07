@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation | Smart Home Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html"><span class="logo-mark">SH</span><span>Smart Home Assistant</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="dashboard-link" href="dashboard.html">Dashboard</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="security.html">Security</a>
+        <a href="energy.html">Energy</a>
+        <a href="automation.html">Automation</a>
+        <a href="assistant.html">AI Assistant</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dashboard.html#deviceGrid">Devices</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="security.html">Security</a>
+        <a href="energy.html">Energy</a>
+        <a href="assistant.html">AI Assistant</a>
+        <a href="automation.html">Automation</a>
+        <a href="#notifications">Notifications</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Automation</p>
+        <h1>Scenes and Automation</h1>
+        <p class="lead">Enable, disable, and run multi-device scenarios. Each scenario updates the simulated smart-home state.</p>
+      </section>
+
+      <section class="page-section">
+        <div id="automationList" class="automation-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="notifications" class="page-section">
+        <div class="notification-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Notifications</p>
+              <h2>Automation activity</h2>
+            </div>
+            <button class="btn" type="button" data-clear-notifications>Clear notifications</button>
+          </div>
+          <ul class="notification-list" data-notification-list data-limit="8"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/devices.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/automation.js"></script>
+</body>
+</html>
